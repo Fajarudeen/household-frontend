@@ -1,0 +1,22 @@
+
+<app-slideshow></app-slideshow>
+
+<div id="b1" class="container-fluid px-2 px-lg-2">
+    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+        <div class="col mb-5" *ngFor="let house of houseLists">
+
+    <div id="card" class="card h-80 mt-4 mb-2 p-3">
+      <img height="300px" [src]="house.image1" class="card-img-top" routerLink="viewhouse/{{house.id}}" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{house.title}}</h5>
+        <h6 class="card-title">{{house.price}}</h6>
+        <p class="card-text">{{house.location}}</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+
+    </div>
+  </div>
+    </div>
+    </div>
+
+

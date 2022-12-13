@@ -1,0 +1,95 @@
+<div class="container mt-3 mb-3 border border-dark p-2">
+  <form action="" (ngSubmit)="addhouse()" [formGroup]="addForm" >
+  <h3 class="text-center mb-3" style="font-family: 'Zen Dots', cursive;">house details</h3>
+  <div class="row">
+      <div class="col-6">
+        <label class="label" for="id">HOUSE ID</label>
+        <input name="id" formControlName="id"  type="text" class="form-control" placeholder="house number">
+      </div>
+      <div class="col-6">
+          <label class="label" for="image1">IMAGE 1</label>
+          <input name="image1" formControlName="image1" placeholder="URL"  type="text" class="form-control"  >
+      </div>
+  </div>
+  <div class="row">
+      <div class="col">
+          <label class="label" for="image2">IMAGE 2</label>
+          <input name="image2" formControlName="image2"placeholder="URL"  type="text" class="form-control">
+      </div>
+      <div class="col">
+              <label class="label" for="image3" >IMAGE 3</label>
+              <input name="image3" formControlName="image3"placeholder="URL" class="form-control" type="text" id="formFile">
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-6">
+              <label class="label" for="image4">IMAGE 4</label>
+              <input name="image4" formControlName="image4"placeholder="URL" type="text" class="form-control">
+      </div>
+      <div class="col-6">
+        <label class="label" for="title">TITLE</label>
+        <input name="title" formControlName="title" type="text" class="form-control">
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+            <label class="label" for="location">LOCATION</label>
+            <input name="location" formControlName="location" type="text" class="form-control" >
+    </div>
+    <div class="col-6">
+        <label class="label" for="owner">OWNER</label>
+        <input name="owner"formControlName="owner" type="text" class="form-control">
+    </div>
+</div>
+  <div class="row">
+    <div class="col-6">
+            <label class="label" for="contact">CONTACT</label>
+            <input name="contact" formControlName="contact" type="text" class="form-control" placeholder="mobile / other contact info">
+    </div>
+    <div class="col-6">
+        <label class="label" for="cent">CENT</label>
+        <input name="cent" formControlName="cent" type="text" class="form-control"placeholder="Property cent">
+    </div>
+</div>
+  <div class="row">
+    <div class="col-6">
+            <label class="label" for="floor">FLOOR</label>
+            <input name="floor" formControlName="floor" type="text" class="form-control" >
+    </div>
+    <div class="col-6">
+        <label class="label" for="type">FURNISHED TYPE</label>
+        <input name="type" formControlName="type" type="text" class="form-control"placeholder="full /semi /non">
+    </div>
+</div>
+  <div class="row">
+    <div class="col-6">
+            <label class="label" for="rooms">ROOMS</label>
+            <input name="rooms" formControlName="rooms"  type="text" class="form-control">
+    </div>
+    <div class="col-6">
+        <label class="label" for="bhk">BHK</label>
+        <input name="bhk" formControlName="bhk" type="text" class="form-control">
+    </div>
+</div>
+  <div class="row">
+    <div class="col-6">
+            <label class="label" for="year">YEAR</label>
+            <input name="year" formControlName="year" type="text" class="form-control" >
+    </div>
+    <div class="col-6">
+        <label class="label" for="price">PRICE</label>
+        <input name="price" formControlName="price" type="text" class="form-control">
+    </div>
+</div>
+  <!-- <div class="row">
+    <div class="col-6"> -->
+            <label class="label" for="other">OTHER DESCRIPTION</label>
+            <input name="other" formControlName="other" type="text" class="form-control" placeholder="more details">
+    <!-- </div>
+</div> -->
+      <div class="text-center">
+        <button routerLink="" class="btn btn-outline-danger m-3" type="submit">Cancel</button>
+        <button class="btn btn-outline-primary m-3" type="submit">Submit</button>
+      </div>
+</form>
+</div>

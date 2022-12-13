@@ -1,0 +1,13 @@
+#b1{
+    background-color:rgb(240, 238, 238);
+    border-color: black;
+}
+#card:hover{
+    transform: scale(1.1);
+    transition: transform .3s;
+}
+#card{
+    border-width: .1rem;
+    border-color: black;
+}
+

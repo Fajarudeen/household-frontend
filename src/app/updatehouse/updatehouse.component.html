@@ -1,0 +1,104 @@
+  <!-- <div class="text-center mb-3">
+    <button routerLink="" class="btn btn-outline-danger" type="submit">Cancel</button>&nbsp;&nbsp;&nbsp;
+    <button onclick="updateHouse()" routerLink="addhouse" class="btn btn-outline-success" type="submit">Save</button>
+  </div> -->
+    
+
+
+  <div class="container mt-3 mb-3 border border-dark p-2">
+    <form action="" #UpdateHouseForm="ngForm" (ngSubmit)="updateHouse(UpdateHouseForm)" >
+    <h3 class="text-center mb-3">Update House Details</h3>
+    <div class="row">
+        <div class="col-6">
+          <label class="label" for="inputId">HOUSE ID</label>
+          <input name="id" [(ngModel)]="houseBody.id"  type="text" class="form-control" placeholder="house number">
+        </div>
+        <div class="col-6">
+            <label class="label" for="name">IMAGE 1</label>
+            <input name="image1" placeholder="URL" [(ngModel)]="houseBody.image1" type="text" class="form-control"  >
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label class="label" for="name">IMAGE 2</label>
+            <input name="image2" placeholder="URL" [(ngModel)]="houseBody.image2"type="text" class="form-control">
+            
+        </div>
+        <div class="col">
+                <label class="label" for="formFile">IMAGE 3</label>
+                <input name="image3" placeholder="URL" [(ngModel)]="houseBody.image3" class="form-control" type="text" id="formFile">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+                <label class="label" for="">IMAGE 4</label>
+                <input name="image4" placeholder="URL" [(ngModel)]="houseBody.image4"type="text" class="form-control">
+        </div>
+        <div class="col-6">
+          <label class="label" for="name">TITLE</label>
+          <input name="title"  [(ngModel)]="houseBody.title" type="text" class="form-control">
+        </div>
+          
+    </div>
+    <div class="row">
+      <div class="col-6">
+              <label class="label" for="">LOCATION</label>
+              <input name="location" [(ngModel)]="houseBody.location"pe="text" class="form-control" >
+      </div>
+      <div class="col-6">
+          <label class="label" for="name">OWNER</label>
+          <input name="owner" [(ngModel)]="houseBody.owner"ype="text" class="form-control">
+      </div>
+  </div>
+    <div class="row">
+      <div class="col-6">
+              <label class="label" for="">CONTACT</label>
+              <input name="contact" [(ngModel)]="houseBody.contact" type="text" class="form-control" placeholder="mobile / other contact info">
+      </div>
+      <div class="col-6">
+          <label class="label" for="name">CENT</label>
+          <input name="cent" [(ngModel)]="houseBody.Cent" type="text" class="form-control"placeholder="property cent">
+      </div>
+  </div>
+    <div class="row">
+      <div class="col-6">
+              <label class="label" for="">FLOOR</label>
+              <input name="floor" [(ngModel)]="houseBody.floor"  type="text" class="form-control" >
+      </div>
+      <div class="col-6">
+          <label class="label" for="name">FURNISHED TYPE</label>
+          <input name="type" [(ngModel)]="houseBody.type" type="text" class="form-control"placeholder="full /semi /non">
+      </div>
+  </div>
+    <div class="row">
+      <div class="col-6">
+              <label class="label" for="">ROOMS</label>
+              <input name="rooms" [(ngModel)]="houseBody.name" type="text" class="form-control" >
+      </div>
+      <div class="col-6">
+          <label class="label" for="name">BHK</label>
+          <input name="bhk" [(ngModel)]="houseBody.bhk" type="text" class="form-control">
+      </div>
+  </div>
+    <div class="row">
+      <div class="col-6">
+              <label class="label" for="">YEAR</label>
+              <input name="year" [(ngModel)]="houseBody.year" type="text" class="form-control">
+      </div>
+      <div class="col-6">
+          <label class="label" for="name">PRICE</label>
+          <input name="price" [(ngModel)]="houseBody.price" type="text" class="form-control">
+      </div>
+  </div>
+    <!-- <div class="row">
+      <div class="col-6"> -->
+              <label class="label" for="">DESCRIPTION</label>
+              <input name="other" [(ngModel)]="houseBody.other" type="text" class="form-control" placeholder="more details">
+      <!-- </div>
+  </div> -->
+        <div class="text-center">
+            <button class="btn btn-primary m-3" type="submit">save changes</button>       
+            <button routerLink="/" class="btn btn-secondary m-3">Discard</button>       
+    </div>
+</form>
+</div>
