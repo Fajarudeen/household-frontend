@@ -8,11 +8,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { ViewhouseComponent } from './viewhouse/viewhouse.component';
 import { AddhouseComponent } from './addhouse/addhouse.component';
 import { UpdatehouseComponent } from './updatehouse/updatehouse.component';
 import { DeletehouseComponent } from './deletehouse/deletehouse.component';
-import { SlideshowComponent } from './slideshow/slideshow.component';
+import { ViewhouseComponent } from './viewhouse/viewhouse.component';
 
 @NgModule({
   declarations: [
@@ -23,8 +22,7 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
     ViewhouseComponent,
     AddhouseComponent,
     UpdatehouseComponent,
-    DeletehouseComponent,
-    SlideshowComponent,
+    DeletehouseComponent
   ],
   imports: [
     BrowserModule,
